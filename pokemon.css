@@ -1,10 +1,89 @@
-.col {
-  justify-content: center;
+body {
+  background-image: url("https://i.imgur.com/wSyw4B4.jpg");
+  background-position: center;
+}
+
+.logo {
+  padding-left: 670px;
+  width: 500px;
+   
+}
+
+
+.card-container {
+  -webkit-perspective: 500px;
+  perspective: 500px;
 
 }
 
-.col img {
-  justify-content: center;
-  width: 200px;
+.card-container:hover .card{
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
 
+.card {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+  transform-style:preserve-3d;
+  animation:float 1.3s ease-in-out infinite;
+}
+
+
+
+@keyframes float {
+  0% { top: -5px; }
+  50% { top: 5px; }
+  100% { top: -5px; }
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+ .cards-container{
+   padding: 400px;
+   display: -webkit-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: row;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ .card {
+  width: 150px;
+	height: 150px;
+  margin: 10px;
+}
+
+ .front, .back {
+  box-shadow: 0 1px 6px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+
+}
+
+ img {
+  display: block;
+  width: 150px;
+}
+
+.logo {
+  justify-content: center;
 }
