@@ -12,8 +12,6 @@ class Info{
   }
 }
 
-PokemonStats = [];
-
 
 let pokemon = ['charizard', 'ditto', 'eevee'];
 
@@ -27,11 +25,14 @@ function getPokemon(name){
       console.log(data);
        let info = new Info(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities);
 
+
        Pokemon.push(info);
+
       }
+
   };
   xhttp.open('GET', 'http://fizal.me/pokeapi/api/v2/name/' + name + '.json');
-  //xhttp.open('GET', `https://pokeapi.co/api/v2/pokemon/${pokemon[i]}/`, true);
+
   xhttp.send();
 }
 
@@ -39,14 +40,12 @@ for (let i=0; i < pokemon.length; i++) {
   getPokemon(pokemon[i]);
 }
 
+function getStats(number_of_pokemon_in_array) {
+  let node = Pokemon[0]['name'] + Pokemon[0]['hp'] + Pokemon[0]['attack'];
+  let stats = document.createElement('p');
+  let miniscreen = document.getElementById('miniscreen');
+  console.log(node);
+  stats.innerHTML = node;
+  document.getElementById('miniscreen').appendChild(stats);
 
-
-
-
-function getStats() {
-  for(var i = 0; i < Pokemon.length; i++) {
-    let stats = document.createElement('p');
-    stats.innerHTML = Pokemon[i].info;
-    document.getElementById('miniscreen').appendChild(stats);
-  }
 }
