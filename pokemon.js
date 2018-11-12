@@ -12,11 +12,8 @@ class Info{
   }
 }
 
+PokemonStats = [];
 
-// var links = ['http://fizal.me/pokeapi/api/v2/name/charizard', 'https://pokeapi.co/api/v2/pokemon/ditto/.'];
-// var i;
-//
-// for(i=0; i < links.length; i++) {
 
 let pokemon = ['charizard', 'ditto', 'eevee'];
 
@@ -29,6 +26,7 @@ function getPokemon(name){
       data = JSON.parse(this.responseText)
       console.log(data);
        let info = new Info(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities);
+
        Pokemon.push(info);
       }
   };
@@ -41,40 +39,14 @@ for (let i=0; i < pokemon.length; i++) {
   getPokemon(pokemon[i]);
 }
 
-// function getDitto() {
-//  var xhttp = new XMLHttpRequest();
-//   xhttp.onreadystatechange = function () {
-//   if (this.readyState == 4 && this.status == 200) {
-//   data = JSON.parse(this.responseText)
-//   console.log(data);
-//   let info = new Info(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities);
-//   Pokemon.push(info);
-//   }
-//
-// };
-//
-// xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/ditto/', true);
-// xhttp.send()
-// }
-//
-// function getEevee() {
-//   var xhttp = new XMLHttpRequest();
-//   xhttp.onreadystatechange = function () {
-//   if (this.readyState == 4 && this.status == 200) {
-//   data = JSON.parse(this.responseText)
-//   console.log(data);
-//   let info = new Info(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities);
-//   Pokemon.push(info);
-//   }
-//
-// };
-//
-// xhttp.open('GET', 'https://pokeapi.co/api/v2/pokemon/eevee/', true);
-// xhttp.send()
-// }
-//
-// function bringToScreen() {
-//   let node = ('h3');
-//   node.innerHTML = pokemon['info'];
-//   document.getElementById('pokemon').appendChilde(node);
-// }
+
+
+
+
+function getStats() {
+  for(var i = 0; i < Pokemon.length; i++) {
+    let stats = document.createElement('p');
+    stats.innerHTML = Pokemon[i].info;
+    document.getElementById('miniscreen').appendChild(stats);
+  }
+}
