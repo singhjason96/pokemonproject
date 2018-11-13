@@ -10,10 +10,10 @@ body {
   height:500px;
   width: 700px;
   padding: 0 20px;
-  background-color: #ff6666;
+  /* background-color: #ff6666; */
   font-family: serif;
   font-size: 40px;
-  color: white;
+  color: black;
   position: absolute;
   top: 150px;
   left: 625px;
@@ -28,9 +28,9 @@ body {
 
 
 img {
-  width: 500px;
-  padding-top: 85px;
-  padding-left: 65px;
+  width: 35%;
+  padding-top: 3%;
+  padding-left: 5%;
 
 }
 
