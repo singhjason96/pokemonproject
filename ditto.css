@@ -1,0 +1,41 @@
+body {
+  background-image: url('http://orig01.deviantart.net/ada4/f/2012/030/7/f/battle_bases_01bg_hd_by_xalien95-d4o49yb.png');
+  background-repeat: no-repeat;
+
+}
+
+
+
+#title {
+  height:500px;
+  width: 700px;
+  padding: 0 20px;
+  background-color: #ff6666;
+  font-family: serif;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 625px;
+
+}
+
+.AboutMe {
+  padding-left: 15%;
+}
+
+
+
+
+img {
+  width: 35%;
+  padding-top: 8%;
+  padding-left: 3%;
+
+}
+
+h2 {
+  margin-left: 12%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}

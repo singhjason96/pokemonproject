@@ -1,0 +1,112 @@
+body {
+  background-image: url('http://orig01.deviantart.net/ada4/f/2012/030/7/f/battle_bases_01bg_hd_by_xalien95-d4o49yb.png');
+  background-repeat: no-repeat;
+
+}
+
+
+
+#title {
+  height:500px;
+  width: 700px;
+  padding: 0 20px;
+  background-color: #ff6666;
+  font-family: serif;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 625px;
+
+}
+
+.AboutMe {
+  padding-left: 18%;
+}
+
+
+
+
+img {
+  width: 500px;
+  padding-top: 85px;
+  padding-left: 65px;
+
+}
+
+h2 {
+  margin-left: 12%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.my-container {
+  border: 1px solid black;
+
+
+}
+
+.my-col:nth-child(1) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('https://t00.deviantart.net/s0vdS_QhAMFJIiF5T57MUeV8zGI=/fit-in/300x900/filters:no_upscale():origin()/pre00/a03c/th/pre/f/2013/152/d/9/flareon_x_eevee_reader___tree_of_beginning_by_theravengirl95-d67f795.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.my-col:nth-child(2) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('https://pre00.deviantart.net/64d5/th/pre/i/2013/270/0/5/vaporeon_by_scratchismyname-d6o5v21.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.my-col:nth-child(3) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('https://vignette.wikia.nocookie.net/five-nights-at-freddys-rus/images/b/be/%D0%94%D0%B6%D0%BE%D0%BB%D1%82%D0%B5%D0%BE%D0%BD.png/revision/latest?cb=20151129131134&path-prefix=ru');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.my-col:nth-child(4) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('https://vignette.wikia.nocookie.net/nintendo/images/9/9f/Umbreon.png/revision/latest?cb=20160225223156&path-prefix=en');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.my-col:nth-child(5) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/sh/e/ef/Espeon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.my-col:nth-child(6) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('https://cdn.bulbagarden.net/upload/thumb/f/f5/470Leafeon.png/1200px-470Leafeon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.my-col:nth-child(7) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('https://orig00.deviantart.net/f1f3/f/2013/144/a/6/glaceon_x_eevee_reader___dreams_come_true_by_theravengirl95-d66fmnq.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.my-col:nth-child(8) {
+  border: 1px solid black;
+  width: 10px;
+  height: 110px;
+  background-image: url('http://static.pokemonpets.com/images/monsters-images-300-300/700-Sylveon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

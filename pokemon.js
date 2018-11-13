@@ -41,11 +41,64 @@ for (let i=0; i < pokemon.length; i++) {
 }
 
 function getStats(number_of_pokemon_in_array) {
-  let node = Pokemon[0]['name'] + Pokemon[0]['hp'] + Pokemon[0]['attack'];
-  let stats = document.createElement('p');
-  let miniscreen = document.getElementById('miniscreen');
-  console.log(node);
-  stats.innerHTML = node;
-  document.getElementById('miniscreen').appendChild(stats);
+  let name = Pokemon[1]['name'];
+  let hp = Pokemon[1]['hp'];
+  let attack = Pokemon[1]['attack'];
+  let defense = Pokemon[1]['defense'];
+  let abilities = Pokemon[1]['abilities'];
+  let stats = document.createElement('h2');
+  let title = document.getElementById('title');
 
+  // console.log(node);
+  stats.innerHTML = " hp " + hp + " attack " + attack + ' defense ' + defense + ' abilities ' + abilities;
+  // stats.innerHTML = hp;
+  document.getElementById('title').appendChild(stats);
+  // document.getElementById('hp').appendChild(stats);
+
+}
+
+function getEeveepage(){
+  window.open('eevee.html');
+}
+
+function getStatsCharizard(number_of_pokemon_in_array) {
+  let name = Pokemon[2]['name'];
+  let hp = Pokemon[2]['hp'];
+  let attack = Pokemon[2]['attack'];
+  let defense = Pokemon[2]['defense'];
+  let abilities = Pokemon[2]['abilities'];
+  let stats = document.createElement('h2');
+  let title = document.getElementById('title');
+
+  // console.log(node);
+  stats.innerHTML = " hp " + hp + " attack " + attack + ' defense ' + defense + ' abilities ' + abilities;
+  // stats.innerHTML = hp;
+  document.getElementById('title').appendChild(stats);
+  // document.getElementById('hp').appendChild(stats);
+
+}
+
+function getCharizardPage(){
+  window.open('charzard.html');
+}
+
+function getStatsDitto(number_of_pokemon_in_array) {
+  let name = Pokemon[0]['name'];
+  let hp = Pokemon[0]['hp'];
+  let attack = Pokemon[0]['attack'];
+  let defense = Pokemon[0]['defense'];
+  let abilities = Pokemon[0]['abilities'];
+  let stats = document.createElement('h2');
+  let title = document.getElementById('title');
+
+  // console.log(node);
+  stats.innerHTML = " hp " + hp + " attack " + attack + ' defense ' + defense + ' abilities ' + abilities;
+  // stats.innerHTML = hp;
+  document.getElementById('title').appendChild(stats);
+  // document.getElementById('hp').appendChild(stats);
+
+}
+
+function getDittoPage(){
+  window.open('ditto.html');
 }
