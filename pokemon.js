@@ -39,7 +39,7 @@ function getPokemon(name){
       }
 
   };
-  xhttp.open('GET', 'http://fizal.me/pokeapi/api/v2/name/' + name + '.json');
+  xhttp.open('GET', 'https://fizal.me/pokeapi/api/v2/name/' + name + '.json');
 
   xhttp.send();
 }

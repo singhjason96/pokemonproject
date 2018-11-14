@@ -10,10 +10,10 @@ body {
   height:500px;
   width: 700px;
   padding: 0 20px;
-  background-color: #ff6666;
+
   font-family: serif;
   font-size: 40px;
-  color: white;
+  color: black;
   position: absolute;
   top: 150px;
   left: 625px;
