@@ -1,0 +1,24 @@
+$primary-size: 150px;
+.card {
+  width: $primary-size;
+  height: $primary-size;
+}
+
+
+$reg-margin : 0;
+.front, .back {
+  top: $reg-margin;
+  bottom: $reg-margin;
+}
+
+img {
+  width: $primary-size;
+}
+
+$primary-position: center;
+.cards-container {
+  -webkit-box-pack: $primary-position;
+  -webkit-justify-content: $primary-position;
+  -ms-flex-pack: $primary-position;
+  justify-content: $primary-position;
+}
